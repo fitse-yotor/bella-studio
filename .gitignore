@@ -1,2 +1,11 @@
 work/
 outputs/
+node_modules/
+dist/
+.vinext/
+.wrangler/
+.sites-runtime/
+.next/
+.env*
+.dev.vars*
+*.tsbuildinfo

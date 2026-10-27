@@ -24,6 +24,8 @@
   </style>
   <link rel="stylesheet" href="theme.css">
   <script src="theme.js" defer></script>
+  <link rel="stylesheet" href="training.css">
+  <script src="training.js" defer></script>
 </head>
 <body>
   <div class="topbar"><div class="wrap"><span>Shashemene · Abosto · Ethiopia</span><span>Newborn, baby, maternity & family photography</span><span>+2519-25-719-291</span></div></div>
@@ -35,6 +37,25 @@
     <section class="experience" id="sessions"><div class="wrap experience-grid"><img class="experience-img" src="assets/baby-blue.jpg" alt="Childhood portrait in a blue studio setting" loading="lazy"><div class="experience-copy"><div class="eyebrow">More than a photoshoot</div><h2>A calm place to be yourselves.</h2><p>From the first enquiry to the final gallery, every detail is designed to make your family feel comfortable, cared for, and completely present.</p><div class="list"><div>Newborn sessions <span>01</span></div><div>Baby milestones <span>02</span></div><div>Maternity stories <span>03</span></div><div>Family portraits <span>04</span></div></div><a class="button" href="#contact" style="margin-top:28px">Find your session <span aria-hidden="true">↗</span></a></div></div></section>
     <section class="quote"><div class="wrap"><blockquote>“The most beautiful things in life are not things. They’re moments.”</blockquote><cite>Bella Studio · Photography for your forever</cite></div></section>
     <section class="contact" id="contact"><div class="wrap contact-grid"><div class="contact-copy"><div class="eyebrow">Let’s make something beautiful</div><h2>Your story starts here.</h2><p>Tell us a little about the season you’re in and we’ll be in touch to plan something gentle, personal, and completely yours.</p><a class="button peach" href="tel:+251925719291">Call +2519-25-719-291</a></div><div class="contact-card"><div><span class="label">Visit the studio</span>Shashemene, Abosto<br>Awash Bank Building, next to Nigat Building<br>Ethiopia</div><div><span class="label">Enquiries</span><a href="tel:+251925719291">+2519-25-719-291</a></div><div><span class="label">Booking note</span>Sessions are scheduled by enquiry. We’ll help you choose the right time and experience for your family.</div></div></div></section>
+    <section class="training wrap" id="academy">
+      <div><div class="eyebrow">Bella Studio · Photography training</div><h2>Start your next<br>creative chapter.</h2><p>Interested in learning photography? Apply for training and tell us what you would like to explore.</p><p>Choose your area of interest below. The studio will contact you about available courses, dates, fees, and places. An application does not confirm enrollment.</p><div class="training-note"><strong>Your application, handled with care.</strong><p>We collect these details to review your training application and contact you about it. To request a correction or deletion, call <a href="tel:+251925719291">+2519-25-719-291</a>.</p></div></div>
+      <form id="training-form" class="contact-card">
+        <h3>Training registration</h3>
+        <div class="form-grid">
+          <label>Full name *<input name="fullName" autocomplete="name" required minlength="2" maxlength="100"></label>
+          <label>Phone number *<input name="phone" type="tel" autocomplete="tel" placeholder="09 25 719 291" required maxlength="25"><small>Ethiopian number starting with 09, 07, +2519 or +2517.</small></label>
+          <label class="wide">Email (optional)<input name="email" type="email" autocomplete="email" maxlength="254"></label>
+          <label>Experience *<select name="experience" required><option value="">Select experience</option><option>Beginner</option><option>Some experience</option><option>Practicing photographer</option></select></label>
+          <label>Preferred schedule *<select name="schedule" required><option value="">Select schedule</option><option>Weekdays</option><option>Weekends</option><option>Flexible</option></select></label>
+          <label class="wide">Training interest *<select name="course" required><option value="">Select an interest</option><option>Photography fundamentals</option><option>Portrait and newborn photography</option><option>Studio lighting</option><option>Editing and retouching</option></select></label>
+          <label class="wide">Anything you’d like us to know? (optional)<textarea name="message" rows="3" maxlength="1500"></textarea></label>
+        </div>
+        <label class="honeypot" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+        <label class="consent"><input type="checkbox" name="consent" required> <span>I agree that Bella Studio may use these details to review my application and contact me about training. *</span></label>
+        <button class="button peach" type="submit">Submit application ↗</button>
+        <p id="registration-status" role="status" aria-live="polite" tabindex="-1"></p>
+      </form>
+    </section>
   </main>
   <footer class="footer"><div class="wrap"><img src="assets/logo-black.png" alt="Bella Studio"><span>© 2026 Bella Studio. Made for the little moments.</span><span>Shashemene · Ethiopia</span></div></footer>
   <div class="modal" aria-hidden="true"><button class="close" aria-label="Close image">×</button><img src="" alt=""></div>
