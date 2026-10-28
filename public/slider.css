@@ -1,0 +1,19 @@
+.hero-slides{position:relative;overflow:hidden;border-radius:180px 180px 4px 4px;box-shadow:var(--shadow);touch-action:pan-y}
+.hero-visual .hero-slide{display:block;margin:0;position:absolute;inset:0;opacity:0;transition:opacity 1s ease;pointer-events:none}
+.hero-visual .hero-slide:first-child{position:relative}
+.hero-visual .hero-slide.is-active{opacity:1}
+.hero-visual .hero-slide img{border-radius:0;box-shadow:none;height:670px;width:100%;object-fit:cover}
+.hero-visual .hero-note{bottom:108px;z-index:2;pointer-events:none}
+.slider-controls{display:flex;align-items:center;justify-content:space-between;gap:4px;margin-top:14px}
+.slider-controls button{display:inline-flex;justify-content:center;align-items:center;min-width:44px;height:44px;padding:0;border:1px solid var(--line);border-radius:50%;background:var(--white);color:var(--charcoal);transition:background-color .25s,border-color .25s}
+.slider-controls button:hover{border-color:var(--accent-ink)}
+.slider-controls .slider-arrow{font-size:1.3rem}.slider-controls .slider-pause{font-size:.7rem;border-radius:24px;padding:0 12px;min-width:64px}
+.slider-dots{display:flex;gap:0;flex-wrap:wrap;justify-content:center;max-width:144px}.slider-dots button{border:0;background:transparent;min-width:32px;width:32px;border-radius:0}
+.gallery .tile:nth-child(7){grid-column:span 3}.gallery .tile:nth-child(8){grid-column:span 4}
+@media(max-width:900px){.gallery .tile:nth-child(7),.gallery .tile:nth-child(8){grid-column:auto}}
+.slider-dots button::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--muted);opacity:.45;transition:transform .3s,opacity .3s}
+.slider-dots button[aria-current="true"]::before{opacity:1;transform:scale(1.5);background:var(--accent-ink)}
+.slider-controls [hidden]{display:none}.slider-announcement{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:900px){.hero-visual .hero-slide img{height:560px}}
+@media(max-width:480px){.hero-slides{border-radius:110px 110px 4px 4px}.hero-visual .hero-slide img{height:460px}.hero-visual .hero-note{bottom:90px}.slider-controls{gap:2px}}
+@media(prefers-reduced-motion:reduce){.hero-visual .hero-slide,.slider-controls button,.slider-dots button::before{transition:none}}
