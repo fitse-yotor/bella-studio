@@ -6,6 +6,6 @@ dist/
 .wrangler/
 .sites-runtime/
 .next/
-.env*
 .dev.vars*
 *.tsbuildinfo
+config.bat
