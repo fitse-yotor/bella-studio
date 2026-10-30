@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["next-env.d.ts", "cloudflare-env.d.ts", "app/**/*.ts", "app/**/*.tsx", "lib/**/*.ts", "types/**/*.d.ts", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", "scripts", "worker", "examples", "dist", "work", "outputs", ".vinext", ".wrangler", ".sites-runtime"]
+}
